@@ -76,6 +76,15 @@
             padding: 8px;
             border-radius: 5px;
         }
+        .sub-index .sub-item3 {
+            background-color: #bbbdc0; /* Color uniforme para subíndices */
+            font-weight: bold;
+            color: #333;
+            margin: 8px 0;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 5px;
+        }
         .sub-index .sub-item {
             background-color: #c20f30;; /* Color uniforme para subíndices */
             font-weight: bold;
@@ -103,6 +112,9 @@
 	}
         .sub-index .fourth-level.rs-prefix {
             background-color: #ff4d4d; /* Rojo o verde fuerte para (nuevo), (new), (nouvelle) */
+        }
+        .sub-index .fourth-level.b-prefix {
+            background-color: #9ec3ff; /* Azul para documentos */
         }
         .sub-index .sub-item a {
             text-decoration: none;
@@ -145,36 +157,72 @@ mark {
      <img src="https://www.mpascensores.com/wp-content/uploads/2019/05/logogris.png" alt="Logo" class="logo">
     <div class="container">
         <h1>SIGMA PROTOCOLES</h1>
-<input type="text" id="searchInput" placeholder="Search for a guide..." style="width: 96%; padding: 10px; margin: 10px 0; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;">
+<input type="text" id="searchInput" placeholder="Rechercher un protocole..." style="width: 96%; padding: 10px; margin: 10px 0; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;">
 
 
         <div class="index-item french" onclick="toggleSubIndex(this)">
-            <span>Français</span>
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/30px-Flag_of_France.svg.png" alt="Bandera de Francia">
+            <span>Controleur Fabricant ?</span>
+            <!-<img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/30px-Flag_of_France.svg.png" alt="Bandera de Francia">
         </div>
         <div class="sub-index">
-            <div class="sub-item" onclick="toggleSubIndex(this)">MicroBasic</div>
+            <div class="sub-item" onclick="toggleSubIndex(this)">Controleur MP  (Technologie GSM?)</div>
                 <div class="sub-index">
-                    <div class="sub-item2" onclick="toggleSubIndex(this)">Versions 800 à 900</div>
-                    <div class="sub-index">
-                        <div class="sub-item fourth-level gr-prefix">
-                            <a href="https://mpascensores.sharepoint.com/sites/MbMP/Multibrand%20Proximity%20APP/Forms/AllItems.aspx?id=%2Fsites%2FMbMP%2FMultibrand%20Proximity%20APP%2FFRANCE%2FSCHINDLER%5FBIONIC%5F5%5FGUIDE%20D%27ENTRETIEN%20DE%20BASE%5FFRA%5Fv00%2Epdf&parent=%2Fsites%2FMbMP%2FMultibrand%20Proximity%20APP%2FFRANCE" target="_blank" rel="noopener noreferrer">
-                            </a>
-                             MicroKey: Changer SIM
-                            </a>
-                        </div>
-                    </div>
-                    <div class="sub-item2" onclick="toggleSubIndex(this)">Autres</div>
-                    <div class="sub-index">
-                        <div class="sub-item fourth-level gr-prefix">
-                            <a href="https://mpascensores.sharepoint.com/sites/MbMP/Multibrand%20Proximity%20APP/Forms/AllItems.aspx?id=%2Fsites%2FMbMP%2FMultibrand%20Proximity%20APP%2FFRANCE%2FSCHINDLER%5FBIONIC%5F5%5FGUIDE%20D%27ENTRETIEN%20DE%20BASE%5FFRA%5Fv00%2Epdf&parent=%2Fsites%2FMbMP%2FMultibrand%20Proximity%20APP%2FFRANCE" target="_blank" rel="noopener noreferrer">
-                            </a>
-                            MicroKey: Changer SIM + MAJ Soft
-                            </a>
-                        </div>
-                    </div>
-                    </div>
-            <div class="sub-item" onclick="toggleSubIndex(this)">ViaSerie</div>
+                    <div class="sub-item2" onclick="toggleSubIndex(this)">4G (GSM Model?)</div>
+                        <div class="sub-index">
+                            <div class="sub-item2" onclick="toggleSubIndex(this)">LINK  (version SOFT: Tous)</div>
+                                <div class="sub-index">
+                                        <div class="sub-item3" onclick="toggleSubIndex(this)">Changer SIM + (Si possible MAJ Soft)</div>
+                                            <div class="sub-index">
+                                                <div class="sub-item fourth-level b-prefix">
+                                                    <a href="https://mpascensores.sharepoint.com/:b:/r/sites/MbMP/S4L%20Documentation/FR/GR024%20Configuration%20Link,%20appels%20et%20S4L%20EcoGO%20V00%20FR.pdf?csf=1&web=1&e=iQz7fQ" target="_blank" rel="noopener noreferrer">
+                                                    </a> 
+                                                    CHANGER SIM
+                                                    </a>
+                                                </div>
+                                                <div class="sub-item fourth-level b-prefix">
+                                                    <a href="https://mpascensores.sharepoint.com/:b:/r/sites/MbMP/S4L%20Documentation/FR/8.2%20Grabaci%C3%B3n%20de%20software%20ecoGO%20ES.pdf?csf=1&web=1&e=KjtxIy" target="_blank" rel="noopener noreferrer">
+                                                    </a> 
+                                                    ecoGO TOOLS
+                                                    </a>
+                                                </div>
+                                                <div class="sub-item fourth-level b-prefix">
+                                                    <a href="https://mpascensores.sharepoint.com/:b:/r/sites/MbMP/S4L%20Documentation/FR/GR023%20Configuration%20t%C3%A9l%C3%A9phonique%20duplex%20-%20Enregistrement%20Sigma%20S4L%20coGO%20V00%20FR.pdf?csf=1&web=1&e=qNXVrr" target="_blank" rel="noopener noreferrer">
+                                                    </a> 
+                                                    DUPLEX
+                                                    </a>
+                                                </div>
+                                                <div class="sub-item fourth-level b-prefix">
+                                                    <a href="https://mpascensores.sharepoint.com/:b:/r/sites/MbMP/S4L%20Documentation/FR/EcoGo_LinkSMS_rev0.1%20FR.pdf?csf=1&web=1&e=QHMu8Y" target="_blank" rel="noopener noreferrer">
+                                                    </a> 
+                                                    SANS SIGMA TEL SMS
+                                                    </a>
+                                                </div>
+                                             </div>
+                                        </div>
+                            <div class="sub-item2" onclick="toggleSubIndex(this)">MK / Via Serie (Version SOFT ?)</div>
+                                <div class="sub-index">
+                                    <div class="sub-item2" onclick="toggleSubIndex(this)">200 à 299 et 350 à 399</div>
+                                        <div class="sub-index">
+                                            <div class="sub-item3" onclick="toggleSubIndex(this)">Changer SIM</div>
+                                                <div class="sub-index">
+                                                    <div class="sub-item fourth-level b-prefix">
+                                                        <a href="https://mpascensores.sharepoint.com/:b:/r/sites/MbMP/S4L%20Documentation/FR/Guide%20g%C3%A9n%C3%A9ral%20de%20connexion%20FR.pdf?csf=1&web=1&e=f7nBKX" target="_blank" rel="noopener noreferrer">
+                                                        </a> 
+                                                        CHANGER SIM
+                                                        </a>
+                                                    </div>
+                                                    <div class="sub-item fourth-level b-prefix">
+                                                        <a href="https://mpascensores.sharepoint.com/:b:/r/sites/MbMP/S4L%20Documentation/FR/QuickGuide%20MP%20Serenite%20FR%20v5.0.pdf?csf=1&web=1&e=jf6Kgo" target="_blank" rel="noopener noreferrer">
+                                                        </a> 
+                                                        CHANGER SIM DÉPANNAGE
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            <div class="sub-item" onclick="toggleSubIndex(this)">Controleur Non-MP  (Technologie GSM?)</div>
             <div class="sub-index">
                 <div class="sub-item2" onclick="toggleSubIndex(this)">Versions 100 à 199 & 300 à 349</div>
                 <div class="sub-index">
@@ -202,32 +250,6 @@ mark {
                         MicroKey: Send Soft to Spain to have a new one + Changer SIM
                         </a>
                     </div>
-                </div>
-                </div>
-            <div class="sub-item" onclick="toggleSubIndex(this)">EcoGO</div>
-            <div class="sub-index">
-            <div class="sub-item2" onclick="toggleSubIndex(this)">Toutes les versions</div>
-                <div class="sub-index">
-                    <div class="sub-item fourth-level gr-prefix">
-                        <a href="https://mpascensores.sharepoint.com/sites/MbMP/Multibrand%20Proximity%20APP/Forms/AllItems.aspx?id=%2Fsites%2FMbMP%2FMultibrand%20Proximity%20APP%2FFRANCE%2FSCHINDLER%5FBIONIC%5F5%5FGUIDE%20D%27ENTRETIEN%20DE%20BASE%5FFRA%5Fv00%2Epdf&parent=%2Fsites%2FMbMP%2FMultibrand%20Proximity%20APP%2FFRANCE" target="_blank" rel="noopener noreferrer">
-                        </a>
-                        Link: Changer SIM + (Si possible MAJ Soft)
-                        </a>
-                    </div>
-                </div>
-                </div>
-                <div>
-            <div class="sub-item" onclick="toggleSubIndex(this)">Multibrand</div>
-            <div class="sub-item" onclick="toggleSubIndex(this)">Multiplex</div>
-<div class="sub-index">
-<div class="sub-item fourth-level gs-prefix">
-                    <a href="https://mpascensores.sharepoint.com/sites/MbMP/Multibrand%20Proximity%20APP/Forms/AllItems.aspx?id=%2Fsites%2FMbMP%2FMultibrand%20Proximity%20APP%2FFRANCE%2FSCHINDLER%5FBIONIC%5F5%5FGUIDE%20D%27ENTRETIEN%20DE%20BASE%5FFRA%5Fv00%2Epdf&parent=%2Fsites%2FMbMP%2FMultibrand%20Proximity%20APP%2FFRANCE" 
-                         Documento 4 Prueba
-                    </a>
-                </div>
-
-        </div>
-
     </div>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
